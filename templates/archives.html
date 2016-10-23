@@ -19,6 +19,7 @@
                             <span class="day">{{ article.date.strftime('%d') }}</span>
                             <span class="year">{{ article.date.strftime('%Y') }}</span>
                         </time>
+{# don't want this -njs
                         <footer>
                             <span class="categories">posted in
                                 <a class='category' href='{{ SITEURL }}/{{ article.category.url }}'>{{ article.category }}</a>
@@ -26,6 +27,7 @@
                             </span>
                             {% include '_includes/article_stats.html' %}
                         </footer>
+#}
                     </article>
                 {% endfor %}
             {% endfor %}
