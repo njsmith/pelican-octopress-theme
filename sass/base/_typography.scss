@@ -153,9 +153,18 @@ blockquote {
 
 /* @extend this to force long lines of continuous text to wrap */
 .force-wrap {
+  /* If the source text has a link with an embedded newline, like
+   *     `hello
+   *     there <target>`_
+   * then this pre-wrap stuff converts that newline into a hard line break in
+   * the rendered HTML. WTF. The break-word part is OK for allowing long raw
+   * URLs to be split. -njs
+   */
+  /*
   white-space: -moz-pre-wrap;
   white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   white-space: pre-wrap;
+  */
   word-wrap: break-word;
 }
