@@ -124,6 +124,9 @@ p, li {
   span { color: $base1 !important; }
   span { font-style: normal !important; font-weight: normal !important; }
 
+  /* This class is added by the :hl_lines: option on code-block --njs */
+  .hll { background-color: #fdf637 !important; }
+
   .c      { color: $base01 !important; font-style: italic !important; }                     /* Comment */
   .cm     { color: $base01 !important; font-style: italic !important; }                     /* Comment.Multiline */
   .cp     { color: $base01 !important; font-style: italic !important;  }                     /* Comment.Preproc */
