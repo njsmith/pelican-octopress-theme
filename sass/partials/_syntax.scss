@@ -27,7 +27,8 @@ figure.code, .gist-file, pre {
 }
 
 html .gist .gist-file {
-  margin-bottom: 1.8em;
+  // margin-bottom: 1.8em;
+  margin-bottom: 1.0em;  // -- njs
   position: relative;
   border: none;
   padding-top: image-height("code_bg.png") !important;
