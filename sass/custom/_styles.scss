@@ -8,10 +8,24 @@ dt {font-weight: bold;}
 dd {margin-left: 1.5em;}
 
 // Added by njs
+
+// headers that are links back to a table-of-contents
+.toc-backref {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 // cribbing from http://duncanlock.net/blog/2013/05/29/better-figures-images-plugin-for-pelican/
+.figure {
+    margin-bottom: 1em;
+}
 .align-right {
     float: right;
-    margin: 0 0 1em 1em;
+    margin-right: 1em;
+}
+.align-left {
+    float: left;
+    margin-left: 1em;
 }
 
 .caption {
