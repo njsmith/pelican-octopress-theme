@@ -17,4 +17,8 @@ dd {margin-left: 1.5em;}
 .caption {
     font-style: italic;
     text-align: center;
+    // figure already has a margin-bottom, and captions are a <p> so they
+    // inherit that margin-bottom, giving us two; this cancels out the one on
+    // the caption. -njs
+    margin-bottom: 0;
 }
