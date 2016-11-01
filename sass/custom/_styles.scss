@@ -16,8 +16,13 @@ dd {margin-left: 1.5em;}
 }
 
 // cribbing from http://duncanlock.net/blog/2013/05/29/better-figures-images-plugin-for-pelican/
+// NB:
+//   ..figure wrapping div gets class="figure align-{whatever}"
+//   ..image just gets an <img class="align-{whatever}">
 .figure {
     margin-bottom: 1em;
+    // https://stackoverflow.com/questions/4979487/image-caption-width-to-same-as-image
+    display: table;
 }
 .align-right {
     float: right;
@@ -26,8 +31,8 @@ dd {margin-left: 1.5em;}
 }
 .align-left {
     float: left;
-    margin-left: 1em;
     margin-right: 1em;
+    margin-left: 1em;
 }
 
 .caption {
@@ -37,4 +42,6 @@ dd {margin-left: 1.5em;}
     // inherit that margin-bottom, giving us two; this cancels out the one on
     // the caption. -njs
     margin-bottom: 0;
+    display: table-caption;
+    caption-side: bottom;
 }
