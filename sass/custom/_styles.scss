@@ -15,6 +15,28 @@ dd {margin-left: 1.5em;}
     text-decoration: inherit;
 }
 
+// .. note::
+.note {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin-left: 1.5em;
+    float: right;
+    max-width: 400px;
+}
+.note p {
+    margin-right: 0.5em;
+    // this gets overridden for the title below
+    margin-left: 1em;
+}
+p.admonition-title {
+    margin-left: 0.5em;
+    display: inline;
+    font-weight: bold;
+}
+p.admonition-title:after {
+    content: ":";
+}
+
 // cribbing from http://duncanlock.net/blog/2013/05/29/better-figures-images-plugin-for-pelican/
 // NB:
 //   ..figure wrapping div gets class="figure align-{whatever}"
