@@ -94,7 +94,7 @@ h3.filename {
   + pre { @include border-top-radius(0px); }
 }
 
-p, li {
+p, li, td {
   code, tt {
     @extend .mono;
     display: inline-block;
