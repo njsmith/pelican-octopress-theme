@@ -10,6 +10,25 @@
     </footer>
   </article>
 
+
+ {# added by njs for
+ https://github.com/getpelican/pelican-plugins/tree/master/neighbors
+ #}
+ {% if article.next_article %}
+  <div style="text-align: right;">
+       Next: <a href="{{ SITEURL }}/{{ article.next_article.url}}">
+             {{ article.next_article.title }}
+         </a>
+ </div>
+ {% endif %}
+ {% if article.prev_article %}
+  <div style="text-align: left;">
+         Previous: <a href="{{ SITEURL }}/{{ article.prev_article.url}}">
+               {{ article.prev_article.title }}
+         </a>
+  </div>
+ {% endif %}
+
   {% if (DISQUS_SITENAME or ISSO_SITEURL) and SITEURL and article.status != "draft" %}
   <section>
     <h1>Comments</h1>
